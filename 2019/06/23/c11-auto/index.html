@@ -94,16 +94,18 @@
 
 
 
-  <meta name="description" content="读书笔记">
-<meta property="og:type" content="website">
-<meta property="og:title" content="寂静的天空">
-<meta property="og:url" content="https://lytsky521.github.io/index.html">
+  <meta name="description" content="定义啥是auto类型?回答这个问题前，我们先看个例子 123for (std::vector&amp;lt;std::string&amp;gt;::iterator it = myvector.begin(); it != myvector.end(); ++it)这个例子可以优化为:for (auto it = myvector.begin(); it != myvector.end(); ++it)  so">
+<meta name="keywords" content="auto,c11">
+<meta property="og:type" content="article">
+<meta property="og:title" content="auto类型">
+<meta property="og:url" content="https://lytsky521.github.io/2019/06/23/c11-auto/index.html">
 <meta property="og:site_name" content="寂静的天空">
-<meta property="og:description" content="读书笔记">
+<meta property="og:description" content="定义啥是auto类型?回答这个问题前，我们先看个例子 123for (std::vector&amp;lt;std::string&amp;gt;::iterator it = myvector.begin(); it != myvector.end(); ++it)这个例子可以优化为:for (auto it = myvector.begin(); it != myvector.end(); ++it)  so">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-06-22T19:24:38.350Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="寂静的天空">
-<meta name="twitter:description" content="读书笔记">
+<meta name="twitter:title" content="auto类型">
+<meta name="twitter:description" content="定义啥是auto类型?回答这个问题前，我们先看个例子 123for (std::vector&amp;lt;std::string&amp;gt;::iterator it = myvector.begin(); it != myvector.end(); ++it)这个例子可以优化为:for (auto it = myvector.begin(); it != myvector.end(); ++it)  so">
 
 
 
@@ -111,7 +113,7 @@
 
   
   
-  <link rel="canonical" href="https://lytsky521.github.io/">
+  <link rel="canonical" href="https://lytsky521.github.io/2019/06/23/c11-auto/">
 
 
 
@@ -121,7 +123,7 @@
   };
 </script>
 
-  <title>寂静的天空</title>
+  <title>auto类型 | 寂静的天空</title>
   
 
 
@@ -169,8 +171,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -308,9 +309,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -342,10 +343,8 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/cocos2dx-learning/2019/06/23/c11-auto/" class="post-title-link" itemprop="url">auto类型</a>
+          <h1 class="post-title" itemprop="name headline">auto类型
+
               
             
           </h1>
@@ -427,9 +426,7 @@
       
 
       
-        
-          
-            <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>啥是auto类型?<br>回答这个问题前，我们先看个例子</p>
+        <h2 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h2><p>啥是auto类型?<br>回答这个问题前，我们先看个例子</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="built_in">std</span>::<span class="built_in">vector</span>&lt;<span class="built_in">std</span>::<span class="built_in">string</span>&gt;::iterator it = myvector.begin(); it != myvector.end(); ++it)</span><br><span class="line">这个例子可以优化为:</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">auto</span> it = myvector.begin(); it != myvector.end(); ++it)</span><br></pre></td></tr></table></figure>
 
 <p>so，auto类型是能够根据等号右边表达式自动推导出左边变量的类型的修饰符</p>
@@ -466,8 +463,6 @@
 </li>
 </ol>
 
-          
-        
       
     </div>
 
@@ -488,187 +483,41 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://lytsky521.github.io/cocos2dx-learning/2019/06/22/c11-main/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="lytsky521">
-      <meta itemprop="description" content="读书笔记">
-      <meta itemprop="image" content="/cocos2dx-learning/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="寂静的天空">
-    </span>
-
-    
-      <header class="post-header">
-
         
+          
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/cocos2dx-learning/2019/06/22/c11-main/" class="post-title-link" itemprop="url">c++11特性</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-06-22 23:00:00" itemprop="dateCreated datePublished" datetime="2019-06-22T23:00:00+08:00">2019-06-22</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-06-23 00:21:16" itemprop="dateModified" datetime="2019-06-23T00:21:16+08:00">2019-06-23</time>
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/cocos2dx-learning/categories/c-11特性篇/" itemprop="url" rel="index"><span itemprop="name">c++11特性篇</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/cocos2dx-learning/tags/auto/" rel="tag"><i class="fa fa-tag"></i> auto</a>
           
-
+            <a href="/cocos2dx-learning/tags/c11/" rel="tag"><i class="fa fa-tag"></i> c11</a>
           
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>在拜读Cocos2d-x官方用户手册时，我们不难发现，手册中大量使用到了c++11中的一些特性，如auto类型、lambda表达式等。有些小伙伴在遇到这些关键语法时难免卡壳，毕竟平时没怎么用过甚至还是头一回接触。我是不会告诉大家我是其中的一个，作为一位在编程界里摸(de)爬(guo)滚(qie)打(guo)多年的，不…不…懂, 不懂怎么啦，难道世界上有人是生下来就无所不知的吗</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/cocos2dx-learning/2019/06/22/c11-main/" rel="next" title="c++11特性">
+                <i class="fa fa-chevron-left"></i> c++11特性
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -678,14 +527,15 @@
   </article>
 
 
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -705,8 +555,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -788,6 +647,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#定义"><span class="nav-number">1.</span> <span class="nav-text">定义</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用方法"><span class="nav-number">2.</span> <span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意事项"><span class="nav-number">3.</span> <span class="nav-text">注意事项</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -913,6 +789,10 @@
 
 
   
+  <script src="/cocos2dx-learning/js/scrollspy.js?v=7.1.2"></script>
+<script src="/cocos2dx-learning/js/post-details.js?v=7.1.2"></script>
+
+
 
   
 
@@ -928,6 +808,8 @@
 
   
 
+
+  
 
 
   
